@@ -1,0 +1,53 @@
+babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+
+to reinstall: yarn install
+
+
+WEBPACK:
+yarn add live-server babel-cli
+"scripts":{
+    "serve": "live-server public/",
+    "build": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
+  },
+
+  also babel-preset-env, babel-preset-react
+
+  yarn add webpack
+
+  "scripts": {
+    "serve": "live-server public/",
+    "build":"webpack --watch",
+    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
+  },
+
+  create file in root folder: webpack.config.js
+
+  yarn add validator
+  yarn add react react-dom
+  yarn add babel-core babel-loader@7
+
+  create .babelrc in root
+
+  yarn add webpack-dev-server
+  no more need for build-babel script
+
+yarn run build for bundle.js
+
+yarn add babel-plugin-transform-class-properties
+
+yarn add react-modal
+
+CSS/SCSS
+yarn add style-loader css-loader
+
+use: [
+                'style-loader',
+                'css-loader'
+                ]
+
+            in webpack
+
+yarn add sass-loader node-sass
+
+yarn add normalize.css
+import 'normalize.css/normalize.css';
